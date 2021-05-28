@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var now= new Date();
+        console.log(now);
+        console.log(now.toLocaleString());
+
+        var i;
+        //getTime(）获取1970年至今的毫秒数
+        i=now.getTime();
+        console.log(i);
+
+        //获取 年份
+        i=now.getFullYear();
+        console.log(i);
+
+        //获取 月份
+        //获取到的月份是从0开始的  需要加1
+        i=now.getMonth();
+        console.log(i+1);
+
+        //获取日期 几号
+        i=now.getDate();
+        console.log("获取日期",i); 
+
+        //星期天就i是星期0的意思其余都事正常的
+        i=now.getDay();
+        console.log("星期"+i);
+
+        //获取小时
+        i=now.getHours();
+        console.log("小时",i);
+
+        i=now.getMinutes();
+        console.log("获取分钟",i)
+
+        i=now.getSeconds();
+        console.log("获取秒钟",i)
+
+        i=now.getMilliseconds();
+        console.log("获取毫秒数",i);
+        
+    </script>
+</body>
+</html>

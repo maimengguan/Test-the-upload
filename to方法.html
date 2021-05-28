@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //获取一个当前的时间对象
+        var now =new Date();
+        console.log(now);
+        console.log(typeof now);
+        var i;
+        //toString()把时间对象转铖字符串（国际写法）
+        i=now.toString();
+        console.log("i=>",i);
+        console.log(typeof i);//字符串类型
+
+        //把日期转成字符串(国际写法) 只有日期
+        //todatestring()
+        i=now.toDateString();
+        console.log("i=>",i);
+
+
+        //把时间转成字符串(国际写法) 只有时间
+        i=now.toTimeString();
+        console.log(i)
+
+        //tolocalestring()把时间对象转成 字符串（当地的写法）
+        i=now.toLocaleString();
+        console.log(i)
+
+        //把日转换成当地写法的字符串
+        i=now.toLocaleDateString();
+        console.log(i)
+
+         //把时间转换成当地写法的字符串
+         i=now.toLocaleTimeString();
+        console.log(i)
+
+
+        i=now.toLocaleString();
+        console.log(i)
+
+    </script>
+</body>
+</html>

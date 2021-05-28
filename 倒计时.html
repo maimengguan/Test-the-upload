@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var o =new Date();
+        console.log("现在的时间",o);
+        var targer =prompt("请输入倒计时的时间");
+        var j=new Date(targer);
+        // var j=new Date("2021/3/9 20:20:41");
+        console.log("用户输入时间",j)
+        var i=j-o;
+        //时
+        var m=j.getHours()-o.getHours();
+        //分
+        var n=j.getMinutes()-o.getMinutes();
+        //秒
+        var v=j.getSeconds()-o.getSeconds();
+        console.log("倒计时：",m+"时",n+"分",v+"秒");
+
+        
+    </script>
+</body>
+</html>
